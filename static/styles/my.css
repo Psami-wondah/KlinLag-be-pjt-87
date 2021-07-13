@@ -1,0 +1,69 @@
+/* Rectangle 92 */
+
+.one {
+    position: absolute;
+    width: 336px;
+    height: 291px;
+    left: 151px;
+    top: 238px;
+
+    background: #4285F4;
+    border-radius: 10px;
+}
+
+
+/* Rectangle 92 */
+
+.two {
+    position: absolute;
+    width: 336px;
+    height: 291px;
+    left: 552px;
+    top: 239px;
+
+    background: #FD003A;
+    border-radius: 10px;
+}
+
+/* Rectangle 92 */
+
+.three {
+    position: absolute;
+    width: 336px;
+    height: 291px;
+    left: 953px;
+    top: 239px;
+
+    background: #2BA84A;
+    border-radius: 10px;
+}
+
+.four{
+    position: absolute;
+width: 1138px;
+height: 671px;
+left: 151px;
+top: 845px;
+
+background: #F5F8F6;
+border-radius: 14px;
+
+}
+.shit .p{
+    position: absolute;
+width: 200px;
+height: 16px;
+left: 219px;
+top: 300px;
+
+font-family: Nunito;
+font-style: normal;
+font-weight: 800;
+font-size: 25px;
+line-height: 16px;
+/* identical to box height, or 64% */
+
+
+color: #FFFFFF;
+
+}

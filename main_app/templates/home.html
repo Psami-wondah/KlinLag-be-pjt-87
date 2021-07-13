@@ -26,6 +26,8 @@
               <br/><br/>
     <a href="{% url 'main_app:recycle-pickup' %}"><button class="btn btn--green">Recycle PickUp</button></a>
     <br/><br/>
+        <a href="{% url 'main_app:point' %}"><button class="btn btn--green">Points</button></a>
+    <br/><br/>
 
         {% elif user.is_collector %}
         <a href="{% url 'main_app:recycle-location' %}"><button class="btn btn--green">PickUp Locations</button></a>

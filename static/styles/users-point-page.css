@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+}
+body, p{
+    margin: 0;
+    padding: 0;
+}
+/*nav{*/
+/*    display: flex;*/
+/*    justify-content: space-around;*/
+/*    width: 35%;*/
+/*    margin-left: auto;*/
+/*    padding-bottom: 5em;*/
+/*    padding-right: 7em;*/
+/*}*/
+/*nav a{*/
+/*    color: black;*/
+/*    text-decoration: none;*/
+/*}*/
+.image1{
+    padding-left: 100px;
+    padding-top: 40px;
+}
+.container2{
+
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 200px;
+
+
+
+}
+.container2 p{
+    text-align: center;
+    padding: 20px;
+}
+.one{
+/*width: 400px;*/
+padding: 80px 60px;
+border: 1px solid #0a8abd;
+/*background-color: rgb(9, 129, 177);*/
+color: white;
+font-size: 20px;
+position: absolute;
+width: 336px;
+height: 291px;
+left: 151px;
+top: 238px;
+
+background: #4285F4;
+border-radius: 10px;
+
+
+}
+.two{
+    /*width: 400px;*/
+padding: 80px 60px;
+border: 1px solid rgb(221, 82, 82);
+/*background-color: rgb(235, 61, 61);*/
+color: white;
+font-size: 20px;
+    position: absolute;
+width: 336px;
+height: 291px;
+left: 552px;
+top: 239px;
+
+background: #FD003A;
+border-radius: 10px;
+
+
+}
+.three{
+    /*width: 400px;*/
+padding: 80px 60px;
+border: 1px solid rgb(39, 153, 39);
+/*background-color: rgb(22, 165, 22);*/
+color: white;
+font-size: 20px;
+    position: absolute;
+width: 336px;
+height: 291px;
+left: 953px;
+top: 239px;
+
+background: #2BA84A;
+border-radius: 10px;
+
+}
+.four{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    padding-left: 110px;
+    margin-bottom: 58px;
+    /*font-size: 20px;*/
+   }
+.h{
+     position: absolute;
+width: 103px;
+height: 16px;
+left: 156px;
+top: 600px;
+
+font-family: Nunito;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 16px;
+/* identical to box height, or 53% */
+
+
+color: #000000;
+}
+.i{
+position: absolute;
+width: 123px;
+height: 16px;
+left: 323px;
+top: 600px;
+
+font-family: Nunito;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 16px;
+/* identical to box height, or 53% */
+
+
+color: #000000;
+}
+.container1{
+    
+/*background-color: rgb(235, 243, 243);*/
+border:1px solid rgb(220, 235, 235);
+font-size: 20px;
+/*width: 90%;*/
+padding: 200px ;
+margin-left:  151px;
+margin-bottom: 235px;
+    margin-top: 420px;
+text-align: center;
+    /*position: fixed;*/
+width: 1138px;
+height: 671px;
+left: 151px;
+top: 845px;
+
+
+background: #F5F8F6;
+border-radius: 14px;
+
+
+}
+.sub{
+    text-decoration: underline;
+    
+}

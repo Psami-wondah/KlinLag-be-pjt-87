@@ -303,3 +303,8 @@ def recycle_location_agency(request):
 @user_is_collector
 def collect(request):
     return render(request, 'collect.html')
+
+@login_required
+@user_is_giver
+def points_page(request):
+    return render(request, 'users-point-page.html')

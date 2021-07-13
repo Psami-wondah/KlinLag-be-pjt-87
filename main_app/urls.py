@@ -28,6 +28,7 @@ urlpatterns = [
     path('recycle-location/', views.recycle_location_agency, name= 'recycle-location'),
     path('login/', views.sign_up_as, name='login'),
     path('collect/', views.collect, name='collect'),
+    path('points/', views.points_page, name='point'),
 ]
 
 if settings.DEBUG:
