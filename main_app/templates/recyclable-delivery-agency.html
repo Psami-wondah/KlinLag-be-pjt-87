@@ -10,31 +10,31 @@
 {% endblock %}
 {% block body %}
     <header>
-        <p>Delivery Services</p>
+        <p style="font-weight: bold">Delivery Services</p>
     </header>
 <section class="body-container py-3">
     <div class="py-2">
-        <h2>Request Recyclable delivery</h2>
+        <h2 style="font-weight: bold">Request Recyclable delivery</h2>
         <p>Home / Delivery</p>
     </div>
     <div class="pickup p-2">
-        <h3 class="py-3">Delivery Details</h3>
+        <h3 class="py-3" style="font-weight: bold">Delivery Details</h3>
         <form class="pickup-form d-grid" method="post" novalidate>
             {% csrf_token %}
             <div class="form-group">
-                <label for="fullname">Full Name</label>
+                <label for="fullname">Company Name</label>
                 {{ request_form.full_name.errors }}
 {#                <input type="text" name="name" id="fullname" placeholder="John Doe">#}
                 {% render_field request_form.full_name  type="text" name="name" id="fullname" placeholder="John Doe"%}
             </div>
             <div class="form-group">
-                <label for="mail">Email Address</label>
+                <label for="mail">Company Email</label>
                 {{ request_form.email.errors }}
 {#                <input type="email" name="mail" id="mail" placeholder="johndoe@example.com">#}
                 {% render_field request_form.email type="email" name="mail" id="mail" placeholder="johndoe@example.com"%}
             </div>
             <div class="form-group">
-                <label for="phoneNumber">Phone Number</label>
+                <label for="phoneNumber">Contact</label>
                 {{ request_form.phone.errors }}
 {#                <input type="text" name="phoneNumber" id="phoneNumber" placeholder="+234">#}
                 {% render_field request_form.phone type="text" name="phoneNumber" id="phoneNumber" placeholder="+234"%}
@@ -64,7 +64,7 @@
                 {% render_field request_form.waste_type  type="checkbox" name="wasteType" id="wasteType" placeholder="Plastic"%}
             </div>
             <div class="form-group">
-                <label for="quantity">Quantity</label>
+                <label for="quantity">Number Of Waste Bags</label>
                 {{ request_form.quantity.errors }}
 {#                <input type="number" name="quantity" id="quantity" placeholder="E.g 1">#}
                 {% render_field request_form.quantity  type="number" name="quantity" id="quantity" placeholder="E.g 1" %}

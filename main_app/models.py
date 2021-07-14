@@ -84,7 +84,7 @@ class PickupRequest(models.Model):
     time = models.ForeignKey(PickupTime, on_delete=models.CASCADE)
     waste_type = models.ManyToManyField(Waste)
     quantity = models.IntegerField()
-    extra_note = models.TextField(max_length=500)
+    extra_note = models.TextField(max_length=500, blank=True)
     is_donor = models.BooleanField(default=False)
     is_collector = models.BooleanField(default=False)
 
