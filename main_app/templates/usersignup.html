@@ -46,21 +46,23 @@
             <div class="row mb-3">
               <div class="col-md-6 col-xs-12">
                 <label for="password" class="form-label">Password</label>
-                  {{ signup_user_form.password1.errors }}
+
                 <div class="input-group">
 {#                  <input type="password" id="password" class="form-control shadow-none" aria-label="Password">#}
                     {% render_field signup_user_form.password1  type="password" id="password" class="form-control shadow-none" aria-label="Password"%}
                   <span class="input-group-text"><img src="../../static/assets/eye.svg" alt="hide"></span>
                 </div>
+                  {{ signup_user_form.password1.errors }}
               </div>
               <div class="col-md-6 col-xs-12">
                 <label for="confirm" class="form-label">Confirm Password</label>
-                  {{ signup_user_form.password2.errors }}
+
                 <div class="input-group">
 {#                  <input type="password" id="confirm" class="form-control shadow-none" aria-label="Confirm Password">#}
                     {% render_field signup_user_form.password2  type="password" id="confirm" class="form-control shadow-none" aria-label="Confirm Password"%}
                   <span class="input-group-text"><img src="../../static/assets/eye.svg" alt="hide"></span>
                 </div>
+                  {{ signup_user_form.password2.errors }}
               </div>
             </div>
 

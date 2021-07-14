@@ -5,6 +5,7 @@ from autoslug import AutoSlugField
 import datetime
 from django.urls import reverse
 from phonenumber_field.modelfields import PhoneNumberField
+from cloudinary.models import CloudinaryField
 
 
 class Schedule(models.Model):
@@ -21,7 +22,7 @@ class Schedule(models.Model):
 
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    image = models.ImageField(default='default.png', upload_to='profile_pics')
+    image = CloudinaryField('image')
     section_points = models.IntegerField(default=0)
 
     def __str__(self):
@@ -32,7 +33,7 @@ class Blogpost(models.Model):
     title = models.CharField(max_length=250)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     body = models.TextField()
-    image = models.ImageField(default='default.png', upload_to='blog_pics')
+    image = CloudinaryField('image')
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
 

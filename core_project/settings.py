@@ -2,6 +2,9 @@ from pathlib import Path
 import json
 import os
 import environ, django_heroku
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
 from django.contrib.messages import constants as messages
 BASE_DIR = Path(__file__).resolve().parent.parent
 env = environ.Env()
@@ -30,7 +33,8 @@ INSTALLED_APPS = [
     'djoser',
     'crispy_forms',
     'widget_tweaks',
-    'drf_spectacular'
+    'drf_spectacular',
+    'cloudinary',
  
 ]
 
@@ -183,6 +187,12 @@ MESSAGE_TAGS = {
         messages.WARNING: 'alert-warning',
         messages.ERROR: 'alert-danger',
  }
+
+cloudinary.config(
+  cloud_name=os.getenv("YOUR_CLOUD_NAME"),
+  api_key=os.getenv("YOUR_API_KEY",),
+  api_secret=os.getenv("YOUR_API_SECRET")
+)
 
 django_heroku.settings(locals())
 LOGIN_URL = 'main_app:index'

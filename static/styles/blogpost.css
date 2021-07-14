@@ -18,11 +18,11 @@ li{
   list-style: none;
 }
 /* utility classes */
-.container{
-  max-width: 900px;
-  margin:20px auto;
-  padding: 1rem;
-}
+/*.container{*/
+/*  max-width: 900px;*/
+/*  margin:20px auto;*/
+/*  padding: 1rem;*/
+/*}*/
 .underline{
   text-decoration: underline;
 }
