@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
 a{
   text-decoration: none;
 }
@@ -10,12 +14,12 @@ a{
 li{
   list-style: none;
 }
-/*!* utility classes *!*/
-/*.container{*/
-/*  max-width: 900px;*/
-/*  margin:20px auto;*/
-/*  padding: 1rem;*/
-/*}*/
+/* utility classes */
+.container{
+  max-width: 900px;
+  margin:20px auto;
+  padding: 1rem;
+}
 .underline{
   text-decoration: underline;
 }
@@ -61,7 +65,7 @@ li{
 /* showcase */
 .showcase{
   background: linear-gradient(rgba(0,0,0,0.5),
-  rgba(0,0,0,0.4)), url('../assets/hero-2.png')no-repeat center center/cover;
+  rgba(0,0,0,0.4)), url('./assets/hero-2.png')no-repeat center center/cover;
   height: 60vh;
 }
 .showcase-content{
@@ -119,22 +123,3 @@ li{
 .article img{
  width: 180px;
 }
-
-@media (max-width: 850px) {
-    .container{
-      display: flex;
-      flex-direction: column;
-    }
-  }
-@media (max-width: 850px) {
-    .others{
-      display: flex;
-      flex-direction: column;
-    }
-  }
-@media (max-width: 850px) {
-    .posts{
-      display: flex;
-      flex-direction: column;
-    }
-  }

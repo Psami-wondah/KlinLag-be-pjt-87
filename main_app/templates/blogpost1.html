@@ -16,13 +16,13 @@
         <p>
             {{ post.body|linebreaks}}
         </p>
-        <div class="icons">
-        <img src="../../static/assets/like.png" alt="like image"> 975
-       
-        <img src="../../static/assets/speech_bubble.png" alt="speech image"> 87
-       
-        <img src="../../static/assets/share.png" alt="share image">
-        </div>
+{#        <div class="icons">#}
+{#        <img src="../../static/assets/like.png" alt="like image"> 975#}
+{#       #}
+{#        <img src="../../static/assets/speech_bubble.png" alt="speech image"> 87#}
+{#       #}
+{#        <img src="../../static/assets/share.png" alt="share image">#}
+{#        </div>#}
 
         <div class="Btns_container">
             
@@ -38,20 +38,31 @@
         </div>
         <section class="Side">
         <div class="Button_container">
+            <p>LEAVE A COMMENT</p>
+
              <form class="form-group" method="post" novalidate>
+            <div class="Input1">
 
-                <p>Leave a comment</p>
             {% csrf_token %}
-                 {{ comment_form|crispy }}
-
+{#                 {{ comment_form|crispy }}#}
+                {{ comment_form.name.errors }}
+{#            <input type="text" placeholder="Enter a name"/>#}
+                {% render_field comment_form.name type="text" placeholder="Enter a name" %}
+            </div>
+            <div class="Input2">
+                {{ comment_form.body.errors }}
+{#                <input type="text" placeholder="Type a message here"/>#}
+                {% render_field comment_form.body type="text" placeholder="Type a message here" %}
+            </div>
             <div class="Input3">
-                <button>Comment</button>
+                <button>COMMENT</button>
             
             </div>
 
             </form>
 
-            <div class="container">
+
+            <div class="Container">
                 {% if post.comments.all %}
                     {% for comment in post.comments.all %}
                 <div class="container border table-secondary" style="border-radius: 10px">
